@@ -68,7 +68,7 @@ def get_original_tweets(client, max_results=5):
             id=TWITTER_USER_ID,
             exclude=["retweets", "replies"],
             max_results=5,
-            tweet_fields=["conversation_id", "created_at"]
+            tweet_fields=["conversation_id", "created_at", "text"]
         )
     return response.data if response.data else []
 
