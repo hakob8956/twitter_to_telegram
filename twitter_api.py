@@ -3,7 +3,7 @@ import time
 import random
 import logging
 from functools import wraps
-from config import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET, TWITTER_USER_ID, BEARER_TOKEN
+from config import TWITTER_USER_ID, BEARER_TOKEN
 
 def exponential_backoff(retries=5, initial_delay=1, backoff_factor=2, jitter=True):
     """
